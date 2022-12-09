@@ -3,6 +3,7 @@
   --size16: 16px;
   --size20: 20px;
   --size24: 24px;
+  --size28: 28px;
   --size30: 30px;
   --size32: 32px;
   --size48: 48px;
@@ -129,6 +130,7 @@ main {
   padding-inline-start: var(--size24);
   padding-inline-end: var(--size24);
   width: fit-content;
+  line-height: var(--size28);
   border-bottom: 8px solid var(--darkGold);
   margin-block-end: var(--size24);
   margin-block-start: -16px;
