@@ -128,8 +128,8 @@ main {
   background-color: var(--lightGold);
   padding-block-start: var(--size16);
   padding-block-end: var(--size16);
-  padding-inline-start: var(--size24);
-  padding-inline-end: var(--size24);
+  padding-inline-start: var(--size32);
+  padding-inline-end: var(--size32);
   width: fit-content;
   line-height: var(--size28);
   border-bottom: 8px solid var(--darkGold);
