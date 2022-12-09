@@ -1,12 +1,136 @@
-* {
+:root {
+  --size8: 8px;
+  --size16: 16px;
+  --size20: 20px;
+  --size24: 24px;
+  --size30: 30px;
+  --size32: 32px;
+  --size48: 48px;
+  --size64: 64px;
+  --size96: 96px;
+  --size128: 128px;
+
+  --scale1: 1rem;
+  --scale125: 1.25rem;
+  --scale150: 1.5rem;
+  --scale2: 2rem;
+
+  --primaryGreen: hsl(160deg, 100%, 30%);
+  --lightGold: hsl(45deg, 100%, 50%);
+  --darkGold: hsl(45deg, 100%, 40%);
+
+  --grayDarkPrimary: hsl(0deg, 0%, 0%);
+  --grayDarkSecondary: hsl(0deg, 0%, 10%);
+  --grayDark: hsl(0deg, 0%, 30%);
+  --grayMedium: hsl(0deg, 0%, 40%);
+  --grayLight: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--grayMedium);
 }
 
-/* Add styles here! */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lato";
+}
+
+p {
+  line-height: var(--size30);
+  font-size: var(--size20);
+}
+
+p:not(:last-child) {
+  margin-bottom: var(--size16);
+}
+
+.max-width-wrapper {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.intro-chunk {
+  padding-top: var(--size96);
+  padding-inline-start: var(--size24);
+  padding-inline-end: var(--size24);
+}
+.intro-chunk .title {
+  font-size: var(--size32);
+  margin-bottom: var(--size48);
+}
+.intro-chunk p {
+  max-width: 415px;
+}
+.intro-chunk p strong {
+  color: var(--primaryGreen);
+}
+
+main {
+  background-color: var(--grayMedium);
+  border-top: 8px solid var(--grayLight);
+  margin-top: var(--size64);
+  padding-block-start: var(--size64);
+  padding-block-end: var(--size64);
+}
+.card {
+  background-color: var(--white);
+  padding: var(--size24);
+}
+.indented-heading {
+  background-color: var(--lightGold);
+  padding-block-start: var(--size16);
+  padding-block-end: var(--size16);
+  padding-inline-start: var(--size24);
+  padding-inline-end: var(--size24);
+  width: fit-content;
+  border-bottom: 8px solid var(--darkGold);
+  margin-block-end: var(--size24);
+  margin-block-start: -16px;
+  margin-inline-start: -32px;
+}
