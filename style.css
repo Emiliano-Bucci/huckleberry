@@ -75,14 +75,14 @@ body {
 }
 
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Lato";
 }
 
 p {
-  line-height: var(--size30);
+  line-height: var(--scale125);
   font-size: var(--size20);
+  line-height: 1.5;
 }
 
 p:not(:last-child) {
@@ -102,8 +102,9 @@ p:not(:last-child) {
   padding-inline-end: var(--size24);
 }
 .intro-chunk .title {
-  font-size: var(--size32);
+  font-size: var(--scale2);
   margin-bottom: var(--size48);
+  line-height: 1.2;
 }
 .intro-chunk {
   max-width: 415px;
