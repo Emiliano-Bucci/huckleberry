@@ -133,7 +133,7 @@ main {
   width: fit-content;
   line-height: var(--size28);
   border-bottom: 8px solid var(--darkGold);
-  margin-block-end: var(--size24);
+  margin-block-end: var(--size16);
   margin-block-start: -16px;
   margin-inline-start: -32px;
 }
